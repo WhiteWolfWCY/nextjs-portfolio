@@ -1,5 +1,8 @@
 import React from "react";
 import { Hind } from "next/font/google";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const hind = Hind({
   subsets: ["latin"],
@@ -7,6 +10,90 @@ const hind = Hind({
 });
 
 export default function HomeComponent() {
+  var settings = {
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    speed: 2000,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    loop: true,
+    cssEase: "linear",
+    responsive: [
+      {
+        breakpoint: 1760,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+        },
+      },
+      {
+        breakpoint: 1460,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+        },
+      },
+      {
+        breakpoint: 1290,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+        },
+      },
+      {
+        breakpoint: 1100,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+        },
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+        },
+      },
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+        },
+      },
+
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
+
   return (
     <React.Fragment>
       <div
@@ -31,12 +118,12 @@ export default function HomeComponent() {
                     Welcome!
                   </p>
                   <h1 className="text-[#223740] font-recoletaBlack text-5xl md:text-5xl lg:text-7xl xl:text-7xl mt-5 md:mt-3">
-                    I am Mateusz
+                    I'm Mateusz
                   </h1>
                   <h2
                     className={`text-[#223740] py-2 font-bold uppercase md:text-xl ${hind.className}`}
                   >
-                    Web Developer &amp; Computer science student
+                    Web Developer &amp; CS student
                   </h2>
                   <a
                     href="/#portfolio"
@@ -62,6 +149,25 @@ export default function HomeComponent() {
                   alt="Profile avatar"
                 ></img>
               </div>
+            </div>
+          </div>
+          <div className="container m-auto absolute">
+            <div className="px-3">
+                <div className="relative max-w-sm bottom-[70px] md:max-w-5xl xl:max-w-6xl px-5 lg:px-14 overflow-auto mx-auto bg-white rounded-2xl z-20"
+                style={{
+                    boxShadow: "#48AFDE -10px 25px 50px 10px"
+                }}
+                >
+                    <div className="lg:py-10 md:py-6 sm:py-6 cursor-all-scroll">
+                        <Slider {...settings}>
+                            <img src='/typescript.png' alt="Typescript" className="h-12"/>
+                            <img src='/reactjs.png' alt="ReactJS" className="h-12"/>
+                            <img src='/nextjs.png' alt="NextJS" className="h-12"/>
+                            <img src='/expressjs.png' alt="ExpressJS" className="h-12"/>
+                            <img src='/nodejs.png' alt="NodeJS" className="h-12"/>
+                        </Slider>
+                    </div>
+                </div>
             </div>
           </div>
         </div>

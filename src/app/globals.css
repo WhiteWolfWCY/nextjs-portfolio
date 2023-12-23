@@ -61,3 +61,7 @@ html {
     width: 100% !important;
   }
 }
+
+.slick-list {margin: 0 -5px;}
+.slick-slide>div {padding: 0 10px;}
+
