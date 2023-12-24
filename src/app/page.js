@@ -44,7 +44,9 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className="">
+        <div style={{
+            transform: "translate(0px, -170px)"
+          }}>
           <MySlider />
         </div>
       </div>
