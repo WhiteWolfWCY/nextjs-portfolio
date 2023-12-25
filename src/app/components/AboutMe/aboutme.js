@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { Hind } from "next/font/google";
 import { AboutData } from "@/app/data";
+import "./aboutme.css";
 
 const hind = Hind({
   subsets: ["latin"],
@@ -9,10 +10,10 @@ const hind = Hind({
 });
 
 export default function Aboutme() {
-  const [isFlipped, setIsFlipped] = useState(false);
-  const [isFaded, setIsFaded] = useState(false);
-  const [selectedIndex, setSelectedIndex] = useState(0);
-  const [mapData, setMapData] = useState(AboutData[0]);
+  const [IsFlipped, setIsFlipped] = useState(false);
+  const [IsFaded, setIsFaded] = useState(false);
+  const [SelectedIndex, setSelectedIndex] = useState(0);
+  const [MapData, setMapData] = useState(AboutData[0]);
 
   const myFunctions = (data) => {
     setIsFlipped(false);
@@ -29,18 +30,18 @@ export default function Aboutme() {
   };
 
   const HandleNext = () => {
-    if (selectedIndex < 5) {
-      handleCardClick(AboutData[selectedIndex + 1], selectedIndex + 1);
+    if (SelectedIndex < 5) {
+      handleCardClick(AboutData[SelectedIndex + 1], SelectedIndex + 1);
     } else {
       handleCardClick(AboutData[0], 0);
     }
   };
 
   const HandlePrevious = () => {
-    if (selectedIndex !== 0) {
-      handleCardClick(AboutData[selectedIndex - 1], selectedIndex - 1);
+    if (SelectedIndex !== 0) {
+      handleCardClick(AboutData[SelectedIndex - 1], SelectedIndex - 1);
     } else {
-      handleCardClick(AboutData[5], 5);
+      handleCardClick(AboutData[2], 2);
     }
   };
 
@@ -99,33 +100,33 @@ export default function Aboutme() {
         }}
         className="lg:-mt-60"
       >
-        <section className="container flex flex-col m-auto sm:flex-row px-5 md:px-24 mt-[50px] sm:mt-0 transform translate-y-[-100px]">
+        <section className="container flex flex-col m-auto sm:flex-row px-5 md:px-24 mt-[50px] sm:mt-0 transform translate-y-[-100px] h-[300px] lg:h-[400px] xl:h-[500px]">
           <div className="hidden sm:flex w-full sm:w-1/2 lg:w-7/12">
-            <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-6 mr-0 lg:mr-10">
+            <div className="grid mt-12 sm:grid-cols-2 xl:grid-cols-3 gap-6 mr-0 lg:mr-10">
               {AboutData.map((item, index) => (
                 <a
-                  key={item}
+                  key={index}
                   onClick={() => handleCardClick(item, index)}
                   style={{ boxShadow: "#48AFDE -5px 10px 20px 0px" }}
-                  className={`relative cursor-pointer transition-all transform duration-300 group rounded-xl center p-6 lg:p-10 flex flex-col justify-center items-center ${
-                    selectedIndex === index
+                  className={`relative cursor-pointer transition-all transform duration-300 group rounded-xl center p-6 lg:p-10 flex flex-col justify-center items-center w-[200px] h-[200px] ${
+                    SelectedIndex === index
                       ? "-translate-y-2 bg-[#476571]"
                       : "hover:bg-[#476571] hover:shadow-xl hover:-translate-y-2 bg-white"
                   }`}
                 >
                   <div className="w-16 h-16 sm:w-10 sm:h-10 lg:w-16 lg:h-16">
-                    <img src={item.img} />
+                    <img src={item.img} alt={`Tile ${index + 1}`} />
                   </div>
                   <h4
                     className={`text-center text-sm lg:text-lg font-recoletaBold transition-colors duration-500 group-hover:text-white text-[#47626D] mt-3 ${
-                      selectedIndex === index ? "text-white" : ""
+                      SelectedIndex === index ? "text-white" : ""
                     }`}
                   >
                     {item.title}
                   </h4>
                   <div
                     className={`absolute -top-2 -right-2 transform transition-all duration-500 opacity-0 group-hover:opacity-100 shadow-xl w-12 h-12 rounded-lg bg-[#476571] flex justify-center items-center font-bold text-white font-recoletaBold text-xl ${
-                      selectedIndex === index
+                      SelectedIndex === index
                         ? "opacity-100 rotate-12"
                         : "group-hover:rotate-12"
                     }`}
@@ -140,7 +141,7 @@ export default function Aboutme() {
             <div className="bg-white rounded-xl p-10 xl:p-12 shadow-accent-color relative">
               <section
                 className={`fade-left overflow-hidden ${
-                  isFaded ? "fade-out" : ""
+                  IsFaded ? "fade-out" : ""
                 }`}
               >
                 <p
@@ -149,16 +150,70 @@ export default function Aboutme() {
                   My Tech Skills Are:{" "}
                 </p>
                 <h2 className="font-recoletaBold text-[#47626D] text-3xl sm:text-2xl md:text-3xl mb-6 w-44 md:w-56 transition duration-500 transform opacity-100">
-                  {mapData.title}
+                  {MapData.title}
                 </h2>
-                <ul className={`${hind.className} font-[300] list-disc text-[#47626D] ml-8 lg:ml-10 text-base lg:text-lg transition duration-500 transform opacity-100`}>
-                    {mapData.array.map((skills)=>(
-                        <li key={skills}>
-                            {skills}
-                        </li>
-                    ))}
+                <ul
+                  className={`${hind.className} font-[300] list-disc text-[#47626D] ml-8 lg:ml-10 text-base lg:text-lg transition duration-500 transform opacity-100`}
+                >
+                  {MapData.array.map((skills) => (
+                    <li key={skills}>{skills}</li>
+                  ))}
                 </ul>
               </section>
+              <div
+                className={`absolute perspective-500 -top-7 sm:-top-8 right-0 sm:-right-20 card ${
+                  IsFlipped ? "flipped" : ""
+                }`}
+              >
+                <div className="card-inner">
+                  <div className="rounded-2xl cursor-pointer text-7xl xl:text-9xl font-recoletaBlack text-white bg-[#47626D] p-5 xl:p-8 w-28 h-28 xl:w-48 xl:h-48 transform transition duration-500 transform-preserve -rotate-6 transform-preserve">
+                    <span className="text-2xl xl:text-6xl mr-2 sm:mr-3">*</span>
+                    {MapData.count}
+                  </div>
+                </div>
+              </div>
+              <div className="absolute right-10 -bottom-5 flex">
+                <a
+                  onClick={HandlePrevious}
+                  className="w-12 h-12 rounded-xl bg-[#47626D] mr-1 transform transition duration-300 cursor-pointer hover:-translate-y-1 flex justify-center items-center"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth="2"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                    className="w-6 h-6 text-white"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M15 19l-7-7 7-7"
+                    ></path>
+                  </svg>
+                </a>
+                <a
+                  onClick={HandleNext}
+                  className="w-12 h-12 rounded-xl bg-[#47626D] mr-1 transform transition duration-300 cursor-pointer hover:-translate-y-1 flex justify-center items-center"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth="2"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                    className="w-6 h-6 text-white"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M9 5l7 7-7 7"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
             </div>
           </div>
         </section>

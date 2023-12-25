@@ -113,7 +113,7 @@ export default function HomeComponent() {
               <div className="container m-auto">
                 <div className="lg:pl-24 sm:pl-10 pl-0 py-20 md:py-0 md:text-start text-center">
                   <p
-                    className={`text-[#47AEDE]  text-3xl md:text-base lg:text-2xl ${hind.className}`}
+                    className={`text-[#47AEDE] text-3xl md:text-base lg:text-2xl ${hind.className}`}
                   >
                     Welcome!
                   </p>
