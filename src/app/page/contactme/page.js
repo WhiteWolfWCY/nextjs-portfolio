@@ -5,6 +5,9 @@ import { FiPhoneCall } from "react-icons/fi";
 import { AiFillMail, AiOutlineFieldTime } from "react-icons/ai";
 import { FaHeadphones } from "react-icons/fa";
 import { Hind } from "next/font/google";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 
 const hind = Hind({
   subsets: ["latin"],
@@ -30,7 +33,6 @@ export default function Page() {
       [key]: value,
     });
   };
-  console.log(state)
 
   const handlePhoneChange = (e) => {
     const value = e.target.value;
@@ -51,8 +53,41 @@ export default function Page() {
     });
   };
 
+  const handleSubmit = (e) =>{
+    e.preventDefault();
+    setLoading(true);
+    let data = {
+        ...state
+    }
+    fetch("/API/contact",{
+        method: "POST",
+        headers: {
+            Accept: "application/json, text/plain, */*",
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(data),
+    })
+    .then(async(res)=>{
+        setLoading(false);
+        const response = await res.json();
+        if(!response.error){
+            clearState()
+            toast(response.message)
+        }else{
+            clearState()
+            toast("Something went wrong")
+        }
+    })
+    .catch((e)=>{
+        setLoading(false)
+        clearState()
+        toast("Something went wrong")
+    })
+  }
+
   return (
     <React.Fragment>
+        <ToastContainer/>
       <div className="flex flex-col items-center justify-center w-full pt-[80px] pb-[80px] mt-4">
         <div className='flex flex-col items-center justify-center bg-[url("/offices.jpg")] bg-cover bg-center w-full h-[400px]'>
           <div className="flex flex-col items-center justify-center w-full h-full bg-[#223740]/70 backdrop-brightness-50 ">
@@ -170,7 +205,9 @@ export default function Page() {
             </div>
           </div>
 
-          <form className="flex flex-col gap-[20px]">
+          <form className="flex flex-col gap-[20px]"
+          onSubmit={handleSubmit}
+          >
             <div
               className={`flex flex-col sm:flex-row gap-[20px] ${hind.className}`}
             >
@@ -207,7 +244,7 @@ export default function Page() {
               />
               <input
                 type="text"
-                name="Subject"
+                name="subject"
                 placeholder="Your Subject..."
                 required
                 onChange={handleChange}
