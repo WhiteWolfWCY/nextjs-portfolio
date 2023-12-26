@@ -266,6 +266,13 @@ export default function Page() {
               id="contact"
               className="flex flex-col items-center justify-center"
             >
+                {
+                    loading &&(
+                        <div className="mb-3 text-center ml-5 w-6 h-6 border-t-2 border-blue-600 border-solid rounded-full animate-spin">
+
+                        </div>
+                    )
+                }
               <button className="bg-[#48AFDE] w-full px-[30px] py-[12px] hover:bg-[#223740] transition-color duration-300 font-semibold rounded-lg text-white">
                 Submit
               </button>
