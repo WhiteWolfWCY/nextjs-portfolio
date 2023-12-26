@@ -13,17 +13,13 @@ export default function Index({ id, data, DataArray }) {
   const [previous, setPrevious] = useState();
 
   useEffect(() => {
-    if (JSON.parse(id) === DataArray.length - 1) {
-      setNext(0);
-    } else {
-      setNext(JSON.parse(id) + 1);
-    }
-    if (JSON.parse(id) === DataArray.length - 1) {
-      setPrevious(0);
-    } else {
-      setPrevious(JSON.parse(id) - 1);
-    }
-  }, []);
+    const currentId = JSON.parse(id);
+    const totalProjects = DataArray.length;
+  
+    setPrevious(currentId === 0 ? totalProjects - 1 : currentId - 1);
+  
+    setNext(currentId === totalProjects - 1 ? 0 : currentId + 1);
+  }, [id, DataArray]);
 
   return (
     <React.Fragment>
@@ -121,7 +117,13 @@ export default function Index({ id, data, DataArray }) {
         >
           <a
             className="flex justify-center group:hover:bg-[#223740] cursor-pointer transition-colors duration-300 bg-[#405B66] bg-opacity-90 items-center w-full h-full"
-            onClick={() => router.push(`/portfoliodetail/${previous}`)}
+            onClick={() =>
+              router.push(
+                `/portfoliodetail/${
+                  JSON.parse(id) === 0 ? DataArray.length - 1 : previous
+                }`
+              )
+            }
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
