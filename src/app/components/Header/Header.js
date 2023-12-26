@@ -120,7 +120,7 @@ export default function Header() {
               className={`menu-item ${
                 selectedIndex1 === 3 ? "text-black" : ""
               } text-[#666d47] group-hover:text-black`}
-              href="/#contact-me"
+              href="/page/contactme"
               onClick={() => setSelectedIndex1(3)}
             >
               Contact me
