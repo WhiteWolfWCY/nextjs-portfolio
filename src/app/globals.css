@@ -20,7 +20,7 @@ body {
   height: 2rem;
   width: 2rem;
   border-radius: 0.5rem;
-  background-color: #48AFDE;
+  background-color: #ed891f;
   transition-duration: .5s;
   position: absolute;
 }
@@ -68,6 +68,6 @@ html {
 @media (min-width: 1280px){
   .headerShow{
     background-color: white;
-    box-shadow: #48AFDE -10px 25px 50px 10px;
+    box-shadow: #ed891f -10px 25px 50px 10px;
   }
 }

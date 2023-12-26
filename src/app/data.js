@@ -10,9 +10,11 @@ export const AboutData = [
       "JavaScript (ES6)",
       "TypeScript",
       "ReactJS",
+      "React-Query",
       "NextJS",
       "TailwindCSS",
       "Bootstrap",
+      "MaterialUI"
     ],
   },
   {
@@ -21,8 +23,9 @@ export const AboutData = [
     img: "/third.svg",
     array: [
       "NodeJS",
-      "Express.js",
+      "ExpressJS",
       "MySQL",
+      "Type-ORM",
       "Next.js (API)",
       "REST API",
     ],
@@ -41,46 +44,29 @@ export const AboutData = [
   },
 ];
 
-
-// this is for the slider 
 export const DataArray = [
   {
-    title: "Personal Portfolio Website Using Reactjs",
-    name: "Ultimate ReactJs portfolio",
-    des: "I have made this project in 2022  to show thousands of students all over the world  how to make Reactjs portfolio.",
-    des1: "This project was made using, Ractjs, Nextjs, Expressjs, Nodejs, Rxjs Bootsrap and many more!",
+    title: "Personal Portfolio Website Using React",
+    name: "NextJS Portfolio",
+    des: "This project is the exact page you can see right now. Not only was it exciting to build, but have also let me experience NextJS features in action",
+    des1: "This project was made using React, NextJS, NodeJS, TailwindCSS and many more!",
     images: ["/reactportfolio.png"],
+    skills: ["JavaScript", "React", "NextJS", "NodeJS", "TailwindCSS"],
   },
   {
-    title: "Management Consulting Company Web Design",
-    name: "edubaba Management Consultants",
-    des: "We buit this project for edubaba  Management Consultants.",
+    title: "Personal Task Manager",
+    name: "To-Do App",
+    des: "This application was made using TypeScript with React, MaterialUI to design the front-end, and many more!",
     des1: "",
-
-    images: ["/hotel01.png", ],
+    images: ["/todo-react.png" ],
+    skills: ["TypeScript", "React", "React-Query", "MaterialUI"]
   },
   {
-    title: "Food Delivery Company WebSite",
-    name: "Yum Food Company",
-    des: "We did  this project for Yum Foods Located in USA.",
-    des1: "This website's graphic design is fantastic. Animated sliders are painstakingly built and created in WordPress with Revolution Slider. All of the product photos are photo manipulations created in Adobe Photoshop.",
-
-    images: ["/yumfood.jpg"],
-  },
-  {
-    title: "Real Estate and Property Management Project",
-    name: "Inans Property Management ",
-    des: "We built this project for inans group LTD",
-    des1: "Aside from its gorgeous design, this website is backed by an outstanding plugin that allows owners and agencies to simply display different properties in the neighbourhood and create an online showcase in an appealing manner for home buyers and tenants..",
-
-    images: ["/property1.png"],
-  },
-  {
-    title: "Crypto Trading Website",
-    name: "Crypto Trading project",
-    des: "We buit this website for BigMoney group",
-    des1: "This project was built to enable clients all over the world to buy and sell their crypto.",
-
-    images: ["/crypto5.png", "/crypto3.png", "/crypto1.png"],
+    title: "Personal Task Manager API",
+    name: "API for my To-Do App",
+    des: "This project was made to expose API to use within the Personal Task Manager",
+    des1: "In order to maintain good coding practises, the API was extracted to another project. It was built using ExpressJS.",
+    images: ["/todo-api.png"],
+    skills:["ExpressJS", "NodeJS", "Type-ORM", "MySQL"],
   },
 ];

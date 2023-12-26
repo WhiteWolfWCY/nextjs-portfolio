@@ -100,7 +100,7 @@ export default function HomeComponent() {
         id="home"
         style={{
           backgroundImage:
-            "linear-gradient(60deg, #EEF7FB 0 50%, #48AFDE 0% 100%)",
+            "linear-gradient(60deg, #EEF7FB 0 50%, #ed891f 0% 100%)",
           minHeight: "500px",
           maxHeight: "1200px",
           height: "100%",
@@ -113,7 +113,7 @@ export default function HomeComponent() {
               <div className="container m-auto">
                 <div className="lg:pl-24 sm:pl-10 pl-0 py-20 md:py-0 md:text-start text-center">
                   <p
-                    className={`text-[#47AEDE] text-3xl md:text-base lg:text-2xl ${hind.className}`}
+                    className={`text-[#ed891f] text-3xl md:text-base lg:text-2xl ${hind.className}`}
                   >
                     Welcome!
                   </p>
@@ -127,14 +127,14 @@ export default function HomeComponent() {
                   </h2>
                   <a
                     href="/#portfolio"
-                    className={`cursor-pointer inline-block bg-[#47AEDE] transition-all duration-300 ease-in-out rounded-lg text-white py-3 px-5 font-bold mt-8 uppercase md:py-2 lg:py-3 lg:px-8 md:text-xs lg:text-base md:mt-5 xl:mt-10 hover:bg-[#223740] hover:show-lg transform hover:translate-y-1 ${hind.className}`}
+                    className={`cursor-pointer inline-block bg-[#ed891f] transition-all duration-300 ease-in-out rounded-lg text-white py-3 px-5 font-bold mt-8 uppercase md:py-2 lg:py-3 lg:px-8 md:text-xs lg:text-base md:mt-5 xl:mt-10 hover:bg-[#223740] hover:show-lg transform hover:translate-y-1 ${hind.className}`}
                   >
                     Projects
                   </a>
                   <a
                     href="MateuszMartyna.pdf"
                     download="MateuszMartyna.pdf"
-                    className={`ml-10 cursor-pointer inline-block bg-[#223740] transition-all duration-300 ease-in-out rounded-lg text-white py-3 px-5 font-bold mt-8 uppercase md:py-2 lg:py-3 lg:px-8 md:text-xs lg:text-base md:mt-5 xl:mt-10 hover:bg-[#47AEDE] hover:show-lg transform hover:translate-y-1 ${hind.className}`}
+                    className={`ml-10 cursor-pointer inline-block bg-[#223740] transition-all duration-300 ease-in-out rounded-lg text-white py-3 px-5 font-bold mt-8 uppercase md:py-2 lg:py-3 lg:px-8 md:text-xs lg:text-base md:mt-5 xl:mt-10 hover:bg-[#ed891f] hover:show-lg transform hover:translate-y-1 ${hind.className}`}
                   >
                     My Resume
                   </a>
@@ -155,7 +155,7 @@ export default function HomeComponent() {
             <div className="px-3">
                 <div className="relative max-w-sm bottom-[70px] md:max-w-5xl xl:max-w-6xl px-5 lg:px-14 overflow-auto mx-auto bg-white rounded-2xl z-20"
                 style={{
-                    boxShadow: "#48AFDE -10px 25px 50px 10px"
+                    boxShadow: "#ed891f -10px 25px 50px 10px"
                 }}
                 >
                     <div className="lg:py-10 md:py-6 sm:py-6 cursor-all-scroll">

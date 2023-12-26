@@ -16,7 +16,7 @@ export default function DiagonalDrawer({
         <div
           className={`z-50 ${
             pathname === "/" ? "top-[0px]" : "top-0"
-          } cursos-pointer fixed w-14 h-14 lg:w-24 lg:h-24 bg-[#48AFDE] flex justify-center items-center rounded-br-3xl} `}
+          } cursos-pointer fixed w-14 h-14 lg:w-24 lg:h-24 bg-[#ed891f] flex justify-center items-center rounded-br-3xl} `}
         >
           <div
             onClick={() => setIsOpen(false)}
@@ -77,11 +77,11 @@ export default function DiagonalDrawer({
                       Home
                     </a>
                     {selectedIndex1 === 0 ? (
-                      <div className="absolute top-2 -left-2 w-full h-full transform-gpu transition-all duration-300 -rotate-6 opacity-100 group-hover:-rotate-6 group-hover:opacity-100 bg-[#48AFDE] rounded-xl -z-10"></div>
+                      <div className="absolute top-2 -left-2 w-full h-full transform-gpu transition-all duration-300 -rotate-6 opacity-100 group-hover:-rotate-6 group-hover:opacity-100 bg-[#ed891f] rounded-xl -z-10"></div>
                     ) : (
                       ""
                     )}
-                    <div className="absolute top-2 -left-2 w-full h-full transform-gpu transition-all duration-300 rotate-0 opacity-0 group-hover:-rotate-6 group-hover:opacity-100 bg-[#48AFDE] rounded-xl -z-10"></div>
+                    <div className="absolute top-2 -left-2 w-full h-full transform-gpu transition-all duration-300 rotate-0 opacity-0 group-hover:-rotate-6 group-hover:opacity-100 bg-[#ed891f] rounded-xl -z-10"></div>
                   </div>
                 </li>
                 <li className="group my-4 xl:my-4 2xl:my-6 relative">
@@ -96,11 +96,11 @@ export default function DiagonalDrawer({
                       Portfolio
                     </a>
                     {selectedIndex1 === 1 ? (
-                      <div className="absolute top-2 -left-2 w-full h-full transform-gpu transition-all duration-300 -rotate-6 opacity-100 group-hover:-rotate-6 group-hover:opacity-100 bg-[#48AFDE] rounded-xl -z-10"></div>
+                      <div className="absolute top-2 -left-2 w-full h-full transform-gpu transition-all duration-300 -rotate-6 opacity-100 group-hover:-rotate-6 group-hover:opacity-100 bg-[#ed891f] rounded-xl -z-10"></div>
                     ) : (
                       ""
                     )}
-                    <div className="absolute top-2 -left-2 w-full h-full transform-gpu transition-all duration-300 rotate-0 opacity-0 group-hover:-rotate-6 group-hover:opacity-100 bg-[#48AFDE] rounded-xl -z-10"></div>
+                    <div className="absolute top-2 -left-2 w-full h-full transform-gpu transition-all duration-300 rotate-0 opacity-0 group-hover:-rotate-6 group-hover:opacity-100 bg-[#ed891f] rounded-xl -z-10"></div>
                   </div>
                 </li>
                 <li className="group my-4 xl:my-4 2xl:my-6 relative">
@@ -115,11 +115,11 @@ export default function DiagonalDrawer({
                       About me
                     </a>
                     {selectedIndex1 === 2 ? (
-                      <div className="absolute top-2 -left-2 w-full h-full transform-gpu transition-all duration-300 -rotate-6 opacity-100 group-hover:-rotate-6 group-hover:opacity-100 bg-[#48AFDE] rounded-xl -z-10"></div>
+                      <div className="absolute top-2 -left-2 w-full h-full transform-gpu transition-all duration-300 -rotate-6 opacity-100 group-hover:-rotate-6 group-hover:opacity-100 bg-[#ed891f] rounded-xl -z-10"></div>
                     ) : (
                       ""
                     )}
-                    <div className="absolute top-2 -left-2 w-full h-full transform-gpu transition-all duration-300 rotate-0 opacity-0 group-hover:-rotate-6 group-hover:opacity-100 bg-[#48AFDE] rounded-xl -z-10"></div>
+                    <div className="absolute top-2 -left-2 w-full h-full transform-gpu transition-all duration-300 rotate-0 opacity-0 group-hover:-rotate-6 group-hover:opacity-100 bg-[#ed891f] rounded-xl -z-10"></div>
                   </div>
                 </li>
                 <li className="group my-4 xl:my-4 2xl:my-6 relative">
@@ -134,17 +134,17 @@ export default function DiagonalDrawer({
                       Contact me
                     </a>
                     {selectedIndex1 === 3 ? (
-                      <div className="absolute top-2 -left-2 w-full h-full transform-gpu transition-all duration-300 -rotate-6 opacity-100 group-hover:-rotate-6 group-hover:opacity-100 bg-[#48AFDE] rounded-xl -z-10"></div>
+                      <div className="absolute top-2 -left-2 w-full h-full transform-gpu transition-all duration-300 -rotate-6 opacity-100 group-hover:-rotate-6 group-hover:opacity-100 bg-[#ed891f] rounded-xl -z-10"></div>
                     ) : (
                       ""
                     )}
-                    <div className="absolute top-2 -left-2 w-full h-full transform-gpu transition-all duration-300 rotate-0 opacity-0 group-hover:-rotate-6 group-hover:opacity-100 bg-[#48AFDE] rounded-xl -z-10"></div>
+                    <div className="absolute top-2 -left-2 w-full h-full transform-gpu transition-all duration-300 rotate-0 opacity-0 group-hover:-rotate-6 group-hover:opacity-100 bg-[#ed891f] rounded-xl -z-10"></div>
                   </div>
                 </li>
               </ul>
             </nav>
             <section className="mt-14 sm:mt-12 lg:mt-14 text-center relative sm:absolute lg:relative sm:right-0 lg:right-0 h-auto sm:h-full lg:h-auto">
-              <h3 className="block sm:hidden lg:block font-bold text-[#48AFDE] text-2xl uppercase mb-5">
+              <h3 className="block sm:hidden lg:block font-bold text-[#ed891f] text-2xl uppercase mb-5">
                 Follow me around!
               </h3>
               <div className="flex flex-row sm:flex-col lg:flex-row items-center justify-center ">

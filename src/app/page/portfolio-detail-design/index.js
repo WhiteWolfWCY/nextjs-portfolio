@@ -78,32 +78,22 @@ export default function Index({ id, data, DataArray }) {
         </div>
         <div className="col-span-12 lg:col-span-4 lg:px-0 sm:px-20">
           <div className="mt-10 sm:mt-24 w-full lg:max-w-[300px] lg:px-1 px-3 sticky top-36 pb-14">
-            <h1 className="text-3xl mb-4 text-[#48AFDE] ">{data?.name}</h1>
+            <h1 className="text-3xl mb-4 text-[#ed891f] ">{data?.name}</h1>
             <p className="text-[14px] font-sans mb-4 text-[#223740]">
               {data?.des}
             </p>
             <p id="highlight" className="my-2 text-dark text-[20px] font-sans">
-              Project Descriptions
+              Project Description
             </p>
             <p className="text-[14px] font-sans mb-4 text-[#223740]">
               {data?.des1}
             </p>
             <div className="flex flex-wrap">
-              <h1 className="mr-5 text-[14px] bg-[#63c5f1] lg:bg-[#EEF7FB] px-2 py-1 rounded-xl font-sans mb-4 text-white lg:text-[#6A787D]">
-                SKILL
-              </h1>
-              <h1 className="mr-5 text-[14px] bg-[#63c5f1] lg:bg-[#EEF7FB] px-2 py-1 rounded-xl font-sans mb-4 text-white lg:text-[#6A787D]">
-                SKILL
-              </h1>
-              <h1 className="mr-5 text-[14px] bg-[#63c5f1] lg:bg-[#EEF7FB] px-2 py-1 rounded-xl font-sans mb-4 text-white lg:text-[#6A787D]">
-                SKILL
-              </h1>
-              <h1 className="mr-5 text-[14px] bg-[#63c5f1] lg:bg-[#EEF7FB] px-2 py-1 rounded-xl font-sans mb-4 text-white lg:text-[#6A787D]">
-                SKILL
-              </h1>
-              <h1 className="mr-5 text-[14px] bg-[#63c5f1] lg:bg-[#EEF7FB] px-2 py-1 rounded-xl font-sans mb-4 text-white lg:text-[#6A787D]">
-                SKILL
-              </h1>
+              {data?.skills.map((item, index) => (
+                <h1 key={index} className="mr-5 text-[14px] bg-[#63c5f1] lg:bg-[#EEF7FB] px-2 py-1 rounded-xl font-sans mb-4 text-white lg:text-[#6A787D]">
+                  {item}
+                </h1>
+              ))}
             </div>
           </div>
         </div>

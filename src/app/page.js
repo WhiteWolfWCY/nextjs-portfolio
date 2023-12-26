@@ -19,7 +19,7 @@ export default function Home() {
         className="mt-0 pt-5 -mb-40"
         style={{
           backgroundImage:
-            "linear-gradient(-62deg, #EEF7FB 0 45%, white 0% 100%)",
+            "linear-gradient(-62deg, #f0af69 0 45%, white 0% 100%)",
           width: "100%",
         }}
       >
@@ -34,7 +34,7 @@ export default function Home() {
           <div style={{
             transform: "translate(0px, -250px)"
           }}>
-            <p className="text-[#48AFDE] md:pl-[80px] px-5 font-extrabold text-5xl">
+            <p className="text-[#ed891f] md:pl-[80px] px-5 font-extrabold text-5xl">
               Recent Works
             </p>
             <p className={`max-w-2xl md:pl-[80px] px-5 text-[16px] text-[#47626D] leading-8 mt-5 ${hind.className}`}>
