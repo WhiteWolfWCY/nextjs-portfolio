@@ -104,9 +104,9 @@ export default function Page() {
             </div>
             <div className="flex justify-center text-center mt-[10px] md:w-[700px]">
               <p className="text-white font-[300] text-center text-xl">
-                As a dedicated web developer, I'm passionate about turning ideas
-                into seamless digital experiences. If you're looking for
-                innovative and functional web solutions, I'm here to help. Let's
+                As a dedicated web developer, I&apos;m passionate about turning ideas
+                into seamless digital experiences. If you&apos;re looking for
+                innovative and functional web solutions, I&apos;m here to help. Let&apos;s
                 collaborate to bring your vision to life!
               </p>
             </div>

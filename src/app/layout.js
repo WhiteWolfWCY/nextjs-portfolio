@@ -1,5 +1,5 @@
 import "./globals.css";
-import localFont from "@next/font/local";
+import localFont from "next/font/local"
 import Header from "../app/components/Header/Header";
 
 // setting up the fonts to be usdd
