@@ -65,4 +65,9 @@ html {
 .slick-list {margin: 0 -5px;}
 .slick-slide>div {padding: 0 10px;}
 
-
+@media (min-width: 1280px){
+  .headerShow{
+    background-color: white;
+    box-shadow: #48AFDE -10px 25px 50px 10px;
+  }
+}
