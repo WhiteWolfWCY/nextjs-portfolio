@@ -24,7 +24,7 @@ export default function Home() {
         }}
       >
         <div className="container m-auto">
-          <p className="text-[300px] text-[#F7FBFD] md:pl-[50px] px-5 max-w-[750px] w-[100%] overflow-hidden"
+          <p className="text-[300px] select-none text-[#F7FBFD] md:pl-[50px] px-5 max-w-[750px] w-[100%] overflow-hidden"
           style={{
             transform: "translate(0px, -20px)"
           }}

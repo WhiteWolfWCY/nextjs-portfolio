@@ -12,7 +12,7 @@ export default function MySlider() {
     slidesToShow: 1,
     slidesToScroll: 1,
     speed: 500,
-    arrows: false,
+    arrows: true,
     centerMode: true,
     centerPadding: "400px",
     dots: true,

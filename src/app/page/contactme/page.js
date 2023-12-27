@@ -134,11 +134,11 @@ export default function Page() {
                   </div>
                 </div>
                 <div>
-                  <p className="text-[#666666] mt-2">Lublin, Poland</p>
+                  <p className="mt-2">Lublin, Poland</p>
                 </div>
               </div>
             </div>
-            <div className="flex flex-col flex-1 xl:flex-row gap-[20px]">
+            <div className="flex flex-col flex-1 xl:flex-row gap-[20px] mt-4 sm:mt-0">
               <div
                 className="flex flex-col w-[300px] py-[35px] px-[45px] text-center rounded-lg shadow-lg cursor-pointer transition-all transform duration-300 hover:bg-[#223740] hover:text-white hover:-translate-y-4 bg-white"
                 style={{ boxShadow: "#ed891f -1px 1px 10px 0px" }}
@@ -162,7 +162,7 @@ export default function Page() {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col flex-1 xl:flex-row gap-[20px]">
+            <div className="flex flex-col flex-1 xl:flex-row gap-[20px] mt-4 sm:mt-0">
               <div
                 className="flex w-[300px] flex-col py-[35px] px-[45px] rounded-lg shadow-lg cursor-pointer transition-all transform duration-300 hover:bg-[#223740] hover:text-white hover:-translate-y-4 bg-white"
                 style={{ boxShadow: "#ed891f -1px 1px 10px 0px" }}

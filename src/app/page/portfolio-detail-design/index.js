@@ -57,7 +57,7 @@ export default function Index({ id, data, DataArray }) {
         className="grid grid-cols-12 relative space-x-0 lg:space-x-8"
         style={{
           background:
-            "linear-gradient(90deg, rgba(238, 247, 251, 1) 58%, rgba(255, 255, 255, 1) 52%)",
+            "linear-gradient(45deg, #f0af69 35%, rgba(255, 255, 255, 1) 65%)",
         }}
       >
         <div className="col-span-12 lg:col-span-8 mb-20 scroll lg:px-0 sm:px-20">
@@ -83,14 +83,14 @@ export default function Index({ id, data, DataArray }) {
               {data?.des}
             </p>
             <p id="highlight" className="my-2 text-dark text-[20px] font-sans">
-              Project Description
+              Skill set:
             </p>
             <p className="text-[14px] font-sans mb-4 text-[#223740]">
               {data?.des1}
             </p>
             <div className="flex flex-wrap">
               {data?.skills.map((item, index) => (
-                <h1 key={index} className="mr-5 text-[14px] bg-[#63c5f1] lg:bg-[#EEF7FB] px-2 py-1 rounded-xl font-sans mb-4 text-white lg:text-[#6A787D]">
+                <h1 key={index} className="mr-5 text-[14px] bg-[#ed891f] lg:bg-[#EEF7FB] px-2 py-1 rounded-xl font-sans mb-4 text-white lg:text-[#6A787D]">
                   {item}
                 </h1>
               ))}

@@ -14,10 +14,10 @@ export default function HomeComponent() {
     infinite: true,
     slidesToShow: 4,
     slidesToScroll: 1,
-    speed: 2000,
+    speed: 3000,
     arrows: false,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 3000,
     loop: true,
     cssEase: "linear",
     responsive: [
@@ -155,7 +155,7 @@ export default function HomeComponent() {
             <div className="px-3">
                 <div className="relative max-w-sm bottom-[70px] md:max-w-5xl xl:max-w-6xl px-5 lg:px-14 overflow-auto mx-auto bg-white rounded-2xl z-20"
                 style={{
-                    boxShadow: "#ed891f -10px 25px 50px 10px"
+                    boxShadow: "#223740 0px 3px 10px 2px"
                 }}
                 >
                     <div className="lg:py-10 md:py-6 sm:py-6 cursor-all-scroll">

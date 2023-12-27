@@ -17,8 +17,8 @@ export default function SliderCard({ item, index }) {
           />
           <div 
           onClick={() => router.push(`/portfoliodetail/${index}`)}
-          className="absolute bottom-[100px] lg:bottom-44 md:bottom-32 sm:bottom-[270px] left-6 rounded-lg transition duration-300 opacity-0 group-hover:opacity-100 bg-[#47626D] cursor-pointer flex items-center justify-center shadow-accent-color hover:shadow-xl hover:bg-[#47626D] w-10 h-10 md:w-12 md:h-12 lg:w-20 lg:h-20 "
-          style={{ boxShadow: "#ed891f -10px 10px 20px 10px" }}
+          className="absolute bottom-[100px] lg:bottom-44 md:bottom-32 sm:bottom-[270px] left-6 rounded-lg transition duration-300 opacity-[30%] group-hover:opacity-100 bg-[#47626D] cursor-pointer flex items-center justify-center shadow-accent-color hover:shadow-xl hover:bg-[#47626D] w-10 h-10 md:w-12 md:h-12 lg:w-20 lg:h-20"
+          style={{ boxShadow: "#ed891f 0px 0px 20px 10px" }}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -44,7 +44,7 @@ export default function SliderCard({ item, index }) {
         </div>
         <div
           className="absolute top-14 sm:left-12 rounded-lg bg-white h-[200px] lg:h-[350px] md:h-[300px] w-full"
-          style={{ boxShadow: "#ed891f -10px 10px 20px 10px" }}
+          style={{ boxShadow: "#223740 0px 3px 10px 2px" }}
         >
           <div className="relative h-[200px] lg:h-[350px] md:h-[300px] w-[100%]">
             <p className="absolute bottom-3 left-4 text-lg font-[300]">

@@ -33,7 +33,7 @@ export const AboutData = [
   {
     count: 3,
     title: "Tools and Things",
-    img: "/sisxth.svg",
+    img: "/sixth.svg",
     array: [
       "VSCode",
       "Git / Github",

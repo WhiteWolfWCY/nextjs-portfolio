@@ -30,7 +30,7 @@ export default function Aboutme() {
   };
 
   const HandleNext = () => {
-    if (SelectedIndex < 5) {
+    if (SelectedIndex < 2) {
       handleCardClick(AboutData[SelectedIndex + 1], SelectedIndex + 1);
     } else {
       handleCardClick(AboutData[0], 0);
@@ -49,21 +49,21 @@ export default function Aboutme() {
     <React.Fragment>
       <div
         id="about-me"
-        className="bg-[#ed891f] pt-[250px] mt-10 pb-[100px] lg:pb-[600px] relative lg:h-[800px]"
+        className="bg-[#223740] pt-[250px] mt-10 pb-[100px] lg:pb-[600px] relative lg:h-[800px]"
       >
-        <div className="container m-auto">
-          <h1 className="text-[240px] w-[80%] overflow-hidden absolute lg:left-40 md:left-30 top-[-50px] text-[#EAF7FC]">
+        <div className="container m-auto mt-30">
+          <h1 className="text-[240px] w-[80%] select-none overflow-hidden absolute lg:left-40 md:left-30 top-[-50px] text-[#515456] opacity-[30%]">
             About Me
           </h1>
-          <h1 className="relative font-recoletaBlack text-5xl text-[#223740] mb-5 -mt-40 md:px-24 px-5">
+          <h1 className="relative font-recoletaBlack text-5xl text-[#ed891f] mb-5 -mt-40 md:px-24 px-5">
             About Myself
           </h1>
-          <h4 className="relative w-full font-[300] md:w-3/4 lg:w-2/3 xl:w-1/2 font-recoleta text-[#223740] text-2xl mb-10 px-5 md:px-24">
+          <h4 className="relative w-full font-[300] md:w-3/4 lg:w-2/3 xl:w-1/2 font-recoleta text-white text-2xl mb-10 px-5 md:px-24">
             Glad to see you! Want to know me better?
           </h4>
           <section className="relative flex flex-col lg:flex-row px-5 md:px-24">
             <p
-              className={`w-full lg:w-1/3 text-[#223740] mr-0 mb-5 lg:mr-4 ${hind.className}`}
+              className={`w-full lg:w-1/3 text-white mr-0 mb-5 lg:mr-4 ${hind.className}`}
             >
               Hello there! I am Mateusz, a passionate computer science student
               and a dedicated web developer. My journey into the world of
@@ -72,7 +72,7 @@ export default function Aboutme() {
               programming languages.
             </p>
             <p
-              className={`w-full lg:w-1/3 text-[#223740] mr-0 mb-5 lg:mr-4 ${hind.className}`}
+              className={`w-full lg:w-1/3 text-white mr-0 mb-5 lg:mr-4 ${hind.className}`}
             >
               I have dabbled in creating servers for different games, scripting,
               and modding, as well as developing applications using languages
@@ -81,7 +81,7 @@ export default function Aboutme() {
               NextJS.
             </p>
             <p
-              className={`w-full lg:w-1/3 text-[#223740] mr-0 mb-5 lg:mr-4 ${hind.className}`}
+              className={`w-full lg:w-1/3 text-white mr-0 mb-5 lg:mr-4 ${hind.className}`}
             >
               In my professional career, I thrive in the LowCode environment,
               particularly in Outsystems, where I serve as a reactive web
@@ -102,7 +102,7 @@ export default function Aboutme() {
       >
         <section className="container flex flex-col m-auto sm:flex-row px-5 md:px-24 mt-[50px] sm:mt-0 transform translate-y-[-100px] h-[300px] lg:h-[400px] xl:h-[500px]">
           <div className="hidden sm:flex w-full sm:w-1/2 lg:w-7/12">
-            <div className="grid mt-12 sm:grid-cols-2 xl:grid-cols-3 gap-6 mr-0 lg:mr-10">
+            <div className="grid mt-6 sm:grid-cols-1 xl:grid-cols-3 gap-20 mr-0 lg:mr-10">
               {AboutData.map((item, index) => (
                 <a
                   key={index}
