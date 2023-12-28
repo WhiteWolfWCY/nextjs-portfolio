@@ -51,6 +51,7 @@ export const DataArray = [
     des: "This project is the exact page you can see right now. Not only was it exciting to build, but have also let me experience NextJS features in action",
     des1: "This project was made using React, NextJS, NodeJS, TailwindCSS and many more!",
     images: ["/reactportfolio.png"],
+    git: "https://github.com/WhiteWolfWCY/nextjs-portfolio",
     skills: ["JavaScript", "React", "NextJS", "NodeJS", "TailwindCSS"],
   },
   {
@@ -59,6 +60,7 @@ export const DataArray = [
     des: "This application was made using TypeScript with React, MaterialUI to design the front-end, and many more!",
     des1: "",
     images: ["/todo-react.png" ],
+    git:"https://github.com/WhiteWolfWCY/PersonalTaskManager",
     skills: ["TypeScript", "React", "React-Query", "MaterialUI"]
   },
   {
@@ -67,6 +69,7 @@ export const DataArray = [
     des: "This project was made to expose API to use within the Personal Task Manager",
     des1: "In order to maintain good coding practises, the API was extracted to another project. It was built using ExpressJS.",
     images: ["/todo-api.png"],
+    git:"https://github.com/WhiteWolfWCY/PersonalTaskManagerAPI",
     skills:["ExpressJS", "NodeJS", "Type-ORM", "MySQL"],
   },
 ];

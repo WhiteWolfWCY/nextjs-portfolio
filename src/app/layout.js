@@ -1,6 +1,8 @@
 import "./globals.css";
 import localFont from "next/font/local"
 import Header from "../app/components/Header/Header";
+import Footer from '../app/components/Footer/Footer';
+import '@fortawesome/fontawesome-svg-core/styles.css';
 
 // setting up the fonts to be usdd
 const poppins = localFont({
@@ -32,6 +34,7 @@ export default function RootLayout({ children }) {
       <body className={poppins.className}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { Hind } from "next/font/google";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 const hind = Hind({
   subsets: ["latin"],
@@ -82,12 +84,24 @@ export default function Index({ id, data, DataArray }) {
             <p className="text-[14px] font-sans mb-4 text-[#223740]">
               {data?.des}
             </p>
+            <div className="mt-2">
+                  <a
+                    href={data?.git}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[14px] text-[#223740] hover:underline"
+                  >
+                    <FontAwesomeIcon icon={faGithub} className="mr-2" />
+                    GitHub
+                  </a>
+                </div>
             <p id="highlight" className="my-2 text-dark text-[20px] font-sans">
               Skill set:
             </p>
             <p className="text-[14px] font-sans mb-4 text-[#223740]">
               {data?.des1}
             </p>
+            
             <div className="flex flex-wrap">
               {data?.skills.map((item, index) => (
                 <h1 key={index} className="mr-5 text-[14px] bg-[#ed891f] lg:bg-[#EEF7FB] px-2 py-1 rounded-xl font-sans mb-4 text-white lg:text-[#6A787D]">
@@ -119,14 +133,14 @@ export default function Index({ id, data, DataArray }) {
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
-              stroke-width="2"
+              strokeWidth="2"
               stroke="currentColor"
               aria-hidden="true"
-              class="transform transition-transform group-hover:-translate-x-3 duration-300 w-5 h-5 mr-2"
+              className="transform transition-transform group-hover:-translate-x-3 duration-300 w-5 h-5 mr-2"
             >
               <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 d="M7 16l-4-4m0 0l4-4m-4 4h18"
               ></path>
             </svg>
@@ -148,14 +162,14 @@ export default function Index({ id, data, DataArray }) {
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
-              stroke-width="2"
+              strokeWidth="2"
               stroke="currentColor"
               aria-hidden="true"
-              class="transform transition-transform group-hover:translate-x-3 duration-300 w-5 h-5 ml-2"
+              className="transform transition-transform group-hover:translate-x-3 duration-300 w-5 h-5 ml-2"
             >
               <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 d="M17 8l4 4m0 0l-4 4m4-4H3"
               ></path>
             </svg>

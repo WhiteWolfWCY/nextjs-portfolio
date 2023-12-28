@@ -20,7 +20,7 @@ export default function Calltoaction() {
   return (
     <div>
       {isScrolled ? (
-        <div className="bg-red-500 p-4 w-fit rounded-xl fixed bottom-8 right-8 cursor-pointer z-50 animate-bounce"
+        <div className="bg-red-500 p-4 w-fit rounded-xl fixed bottom-[65px] right-8 cursor-pointer z-50 animate-bounce"
         onClick={()=>window.scrollTo(0, 0)}
         >
           <svg
