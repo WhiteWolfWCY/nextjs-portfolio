@@ -101,7 +101,7 @@ export default function Aboutme() {
         className="lg:-mt-60"
       >
         <section className="container flex flex-col m-auto sm:flex-row px-5 md:px-24 mt-[50px] sm:mt-0 transform translate-y-[-100px] h-[300px] lg:h-[400px] xl:h-[500px]">
-          <div className="hidden sm:flex w-full sm:w-1/2 lg:w-7/12">
+          <div className="hidden xl:flex w-full sm:w-1/2 lg:w-7/12">
             <div className="grid mt-6 sm:grid-cols-1 xl:grid-cols-3 gap-20 mr-0 lg:mr-10">
               {AboutData.map((item, index) => (
                 <a
@@ -137,7 +137,7 @@ export default function Aboutme() {
               ))}
             </div>
           </div>
-          <div className="w-full sm:w-1/2 lg:w-5/12 overflow-visible px-0 sm:pl-6 xl:px-10">
+          <div className="m-auto xl:w-5/12 overflow-visible px-0 sm:pl-6 xl:px-10">
             <div className="bg-white rounded-xl p-10 xl:p-12 shadow-accent-color relative">
               <section
                 className={`fade-left overflow-hidden ${

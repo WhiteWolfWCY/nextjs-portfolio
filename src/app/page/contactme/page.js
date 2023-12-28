@@ -116,7 +116,7 @@ export default function Page() {
           <div className="sm:flex gap-[20px] mt-[50px] max-w-[1105px] w-full h-full">
             <div className="flex flex-col flex-1 xl:flex-row gap-[20px]">
               <div
-                className="flex w-[300px] flex-col py-[35px] px-[45px] rounded-lg shadow-lg cursor-pointer transition-all transform duration-300 hover:bg-[#223740] hover:text-white hover:-translate-y-4 bg-white text-center"
+                className="flex w-[300px] flex-col py-[35px] px-[45px] rounded-lg shadow-lg transition-all transform duration-300 hover:bg-[#223740] hover:text-white hover:-translate-y-4 bg-white text-center"
                 style={{ boxShadow: "#ed891f -1px 1px 10px 0px" }}
               >
                 <div className="flex items-center gap-[15px]">
@@ -140,7 +140,7 @@ export default function Page() {
             </div>
             <div className="flex flex-col flex-1 xl:flex-row gap-[20px] mt-4 sm:mt-0">
               <div
-                className="flex flex-col w-[300px] py-[35px] px-[45px] text-center rounded-lg shadow-lg cursor-pointer transition-all transform duration-300 hover:bg-[#223740] hover:text-white hover:-translate-y-4 bg-white"
+                className="flex flex-col w-[300px] py-[35px] px-[45px] text-center rounded-lg shadow-lg transition-all transform duration-300 hover:bg-[#223740] hover:text-white hover:-translate-y-4 bg-white"
                 style={{ boxShadow: "#ed891f -1px 1px 10px 0px" }}
               >
                 <div className="flex items-center gap-[15px]">
@@ -158,13 +158,13 @@ export default function Page() {
                   </div>
                 </div>
                 <div>
-                  <p className="text-[#666666] mt-2">609-359-811</p>
+                  <p className="mt-2">609-359-811</p>
                 </div>
               </div>
             </div>
             <div className="flex flex-col flex-1 xl:flex-row gap-[20px] mt-4 sm:mt-0">
               <div
-                className="flex w-[300px] flex-col py-[35px] px-[45px] rounded-lg shadow-lg cursor-pointer transition-all transform duration-300 hover:bg-[#223740] hover:text-white hover:-translate-y-4 bg-white"
+                className="flex w-[300px] flex-col py-[35px] px-[45px] rounded-lg shadow-lg transition-all transform duration-300 hover:bg-[#223740] hover:text-white hover:-translate-y-4 bg-white"
                 style={{ boxShadow: "#ed891f -1px 1px 10px 0px" }}
               >
                 <div className="flex items-center gap-[15px]">
@@ -182,7 +182,7 @@ export default function Page() {
                   </div>
                 </div>
                 <div>
-                  <p className="text-[#666666] text-[15px] mt-2">
+                  <p className="text-[15px] mt-2">
                     mateuszmartyna44@gmail.com
                   </p>
                 </div>

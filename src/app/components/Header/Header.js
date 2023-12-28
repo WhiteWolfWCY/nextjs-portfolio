@@ -67,8 +67,8 @@ export default function Header() {
             )}
             <a
               className={`menu-item ${
-                selectedIndex1 === 0 ? "text-black" : ""
-              } text-[#223740] group-hover:text-black`}
+                selectedIndex1 === 0 ? "text-[#897b72]" : ""
+              } text-[#223740] group-hover:text-[#897b72]`}
               href="/#home"
               onClick={() => setSelectedIndex1(0)}
             >
@@ -83,8 +83,8 @@ export default function Header() {
             )}
             <a
               className={`menu-item ${
-                selectedIndex1 === 1 ? "text-black" : ""
-              } text-[#223740] group-hover:text-black`}
+                selectedIndex1 === 1 ? "text-[#897b72]" : ""
+              } text-[#223740] group-hover:text-[#897b72]`}
               href="/#portfolio"
               onClick={() => setSelectedIndex1(1)}
             >
@@ -99,8 +99,8 @@ export default function Header() {
             )}
             <a
               className={`menu-item ${
-                selectedIndex1 === 2 ? "text-black" : ""
-              } text-[#223740] group-hover:text-black`}
+                selectedIndex1 === 2 ? "text-[#897b72]" : ""
+              } text-[#223740] group-hover:text-[#897b72]`}
               href="/#about-me"
               onClick={() => setSelectedIndex1(2)}
             >
@@ -115,8 +115,8 @@ export default function Header() {
             )}
             <a
               className={`menu-item ${
-                selectedIndex1 === 3 ? "text-black" : ""
-              } text-[#223740] group-hover:text-black`}
+                selectedIndex1 === 3 ? "text-[#897b72]" : ""
+              } text-[#223740] group-hover:text-[#897b72]`}
               href="/page/contactme"
               onClick={() => setSelectedIndex1(3)}
             >
