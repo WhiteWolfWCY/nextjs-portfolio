@@ -72,4 +72,13 @@ export const DataArray = [
     git:"https://github.com/WhiteWolfWCY/PersonalTaskManagerAPI",
     skills:["ExpressJS", "NodeJS", "Type-ORM", "MySQL"],
   },
+  {
+    title: "GitHub Users Explorer",
+    name: "GitHub Users Explorer",
+    des: "This project allows you to search for GitHub users and get the most important information about them!",
+    des1: "This is a React project, where I used NodeJS, StyledComponents, GitHub API and Auth0 to obtain this fantastic result!",
+    images: ["/github_users_1.png","/github_users_2.png","/github_users_3.png"],
+    git:"https://github.com/WhiteWolfWCY/github-users-explorer",
+    skills:["React", "NodeJS", "GitHub API", "StyledComponents", "Auth0", "FusionCharts"],
+  },
 ];
