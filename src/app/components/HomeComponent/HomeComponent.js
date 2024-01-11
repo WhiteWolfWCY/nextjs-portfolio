@@ -155,7 +155,7 @@ export default function HomeComponent() {
             <div className="px-3">
                 <div className="relative max-w-sm bottom-[70px] md:max-w-5xl xl:max-w-6xl px-5 lg:px-14 overflow-auto mx-auto bg-white rounded-2xl z-20"
                 style={{
-                    boxShadow: "#223740 0px 3px 10px 2px"
+                    boxShadow: "#223740 0px 2px 7px 0px"
                 }}
                 >
                     <div className="lg:py-10 md:py-6 sm:py-6 cursor-all-scroll">
