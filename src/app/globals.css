@@ -68,7 +68,7 @@ html {
 @media (min-width: 1280px){
   .headerShow{
     background-color: white;
-    box-shadow: #223740 0px 2px 7px 0px;
+    box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.1);
   }
 }
 

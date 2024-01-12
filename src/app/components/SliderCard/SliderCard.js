@@ -43,7 +43,7 @@ export default function SliderCard({ item, index }) {
         </div>
         <div
           className="absolute top-14 sm:left-12 rounded-lg bg-white h-[200px] lg:h-[350px] md:h-[300px] w-full"
-          style={{ boxShadow: "#223740 0px 3px 10px 2px" }}
+          style={{ boxShadow: "0px 2px 7px 0px rgba(0, 0, 0, 0.1)" }}
         >
           <div className="relative h-[200px] lg:h-[350px] md:h-[300px] w-[100%]">
             <p className="absolute bottom-3 left-4 text-lg font-[300]">
