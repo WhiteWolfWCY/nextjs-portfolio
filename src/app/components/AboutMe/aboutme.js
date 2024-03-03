@@ -95,12 +95,13 @@ export default function Aboutme() {
       </div>
       <div
         style={{
+          position: "relative",
           backgroundImage: "linear-gradient(45deg, #EAF7FC 70%, #f0af69 30%)",
           width: "100%",
         }}
-        className="lg:-mt-60"
+        className="lg:-mt-80 pb-10 lg:pb-0"
       >
-        <section className="container flex flex-col m-auto sm:flex-row px-5 md:px-24 mt-[50px] sm:mt-0 transform translate-y-[-100px] h-[300px] lg:h-[400px] xl:h-[500px]">
+        <section className="container flex flex-col m-auto sm:flex-row px-5 md:px-24 mt-0 sm:mt-0 transform translate-y-[-100px] h-[300px] lg:h-[400px] xl:h-[500px]">
           <div className="hidden xl:flex w-full sm:w-1/2 lg:w-7/12">
             <div className="grid mt-6 sm:grid-cols-1 xl:grid-cols-3 gap-20 mr-0 lg:mr-10">
               {AboutData.map((item, index) => (
@@ -161,13 +162,13 @@ export default function Aboutme() {
                 </ul>
               </section>
               <div
-                className={`absolute perspective-500 -top-7 sm:-top-8 right-0 sm:-right-20 card ${
+                className={`absolute perspective-500 -top-8 lg:-top-7 -right-6 card ${
                   IsFlipped ? "flipped" : ""
                 }`}
               >
                 <div className="card-inner">
-                  <div className="rounded-2xl cursor-pointer text-7xl xl:text-9xl font-recoletaBlack text-white bg-[#47626D] p-5 xl:p-8 w-28 h-28 xl:w-48 xl:h-48 transform transition duration-500 transform-preserve -rotate-6 transform-preserve">
-                    <span className="text-2xl xl:text-6xl mr-2 sm:mr-3">*</span>
+                  <div className="rounded-2xl cursor-pointer text-5xl lg:text-7xl font-recoletaBlack text-white bg-[#47626D] p-5 lg:p-8 w-20 h-20 lg:w-32 lg:h-32 transform transition duration-500 transform-preserve -rotate-6 transform-preserve">
+                    <span className="text-2xl lg:text-6xl mr-2 sm:mr-3">*</span>
                     {MapData.count}
                   </div>
                 </div>

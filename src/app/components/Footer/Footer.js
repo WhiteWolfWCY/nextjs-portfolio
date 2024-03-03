@@ -14,7 +14,7 @@ import styles from "./footer.module.css";
 
 const Footer = () => {
   return (
-    <footer className={`${styles.footer} lg:mt-0 mt-12`}>
+    <footer className={`${styles.footer} lg:mt-0`}>
       <div className="whitespace-nowrap">
         <p>Mateusz Martyna 2024 &copy;</p>
       </div>

@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { Hind } from "next/font/google";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faLink } from "@fortawesome/free-solid-svg-icons";
 
 const hind = Hind({
   subsets: ["latin"],
@@ -17,9 +18,9 @@ export default function Index({ id, data, DataArray }) {
   useEffect(() => {
     const currentId = JSON.parse(id);
     const totalProjects = DataArray.length;
-  
+
     setPrevious(currentId === 0 ? totalProjects - 1 : currentId - 1);
-  
+
     setNext(currentId === totalProjects - 1 ? 0 : currentId + 1);
   }, [id, DataArray]);
 
@@ -85,26 +86,42 @@ export default function Index({ id, data, DataArray }) {
               {data?.des}
             </p>
             <div className="mt-2">
-                  <a
-                    href={data?.git}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-[14px] text-[#223740] hover:underline"
-                  >
-                    <FontAwesomeIcon icon={faGithub} className="mr-2" />
-                    GitHub
-                  </a>
-                </div>
+              <a
+                href={data?.git}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[14px] text-[#223740] hover:underline"
+              >
+                <FontAwesomeIcon icon={faGithub} className="mr-2" />
+                GitHub
+              </a>
+            </div>
+            {data?.preview !== "" ? (
+              <div className="mt-2">
+                <a
+                  href={data?.preview}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[14px] text-[#223740] hover:underline"
+                >
+                  <FontAwesomeIcon icon={faLink} className="mr-2" />
+                  Live Preview
+                </a>
+              </div>
+            ) : null}
             <p id="highlight" className="my-2 text-dark text-[20px] font-sans">
               Skill set:
             </p>
             <p className="text-[14px] font-sans mb-4 text-[#223740]">
               {data?.des1}
             </p>
-            
+
             <div className="flex flex-wrap">
               {data?.skills.map((item, index) => (
-                <h1 key={index} className="mr-5 text-[14px] bg-[#ed891f] lg:bg-[#EEF7FB] px-2 py-1 rounded-xl font-sans mb-4 text-white lg:text-[#6A787D]">
+                <h1
+                  key={index}
+                  className="mr-5 text-[14px] bg-[#ed891f] lg:bg-[#EEF7FB] px-2 py-1 rounded-xl font-sans mb-4 text-white lg:text-[#6A787D]"
+                >
                   {item}
                 </h1>
               ))}
