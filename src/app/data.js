@@ -46,6 +46,16 @@ export const AboutData = [
 
 export const DataArray = [
   {
+    title: "Cloud Storage",
+    name: "ByteBin",
+    des: "ByteBin is a cloud storage platform where people can store their files. Users can create organizations to share files between them. Malware detection and more file types are in development.",
+    des1: "",
+    images: ["/bytebin1.jpeg","/bytebin2.jpeg","/bytebin3.jpeg","/bytebin4.jpeg"],
+    git: "https://github.com/WhiteWolfWCY/byte-bin",
+    preview: "https://byte-bin-eight.vercel.app",
+    skills: ["NextJS", "React", "TypeScript", "NodeJS", "TailwindCSS", "Shadcn"],
+  },
+  {
     title: "Digital Marketplace",
     name: "WolfGeekMarkt",
     des: "This is by far the most advanced project I have managed to complete. This is a fullstack application providing users with a marketplace where they can buy, but also sell digital goods such as icons or UI kits.",
@@ -84,16 +94,6 @@ export const DataArray = [
     git:"https://github.com/WhiteWolfWCY/PersonalTaskManager",
     preview: "",
     skills: ["TypeScript", "React", "React-Query", "MaterialUI"]
-  },
-  {
-    title: "Personal Task Manager API",
-    name: "API for my To-Do App",
-    des: "This project was made to expose API to use within the Personal Task Manager",
-    des1: "In order to maintain good coding practises, the API was extracted to another project. It was built using ExpressJS.",
-    images: ["/todo-api.png"],
-    git:"https://github.com/WhiteWolfWCY/PersonalTaskManagerAPI",
-    preview: "",
-    skills:["ExpressJS", "NodeJS", "Type-ORM", "MySQL"],
-  },
+  }
   
 ];
