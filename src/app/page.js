@@ -4,6 +4,7 @@ import { Hind } from "next/font/google";
 import MySlider from "./components/SliderCard/MySlider";
 import AboutMe from "./components/AboutMe/aboutme";
 import CallToAction from "./components/CallToAction/CallToAction";
+import { useEffect, useState } from "react";
 
 const hind = Hind({
   subsets: ["latin"],
@@ -11,8 +12,36 @@ const hind = Hind({
 });
 
 export default function Home() {
+  const [mounted, setIsMounted] = useState(false);
+  const [showRedirectMessage, setShowRedirectMessage] = useState(true);
+  const [counter, setCounter] = useState(3); // Initialize counter to 3 seconds
+  const redirectUrl = "https://portfolio-v2-beta-gilt.vercel.app/";
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCounter((prevCounter) => prevCounter - 1);
+    }, 1000); // Decrement counter every second
+
+    if (counter === 0) {
+      window.location.replace(redirectUrl);
+      clearInterval(timer);
+    }
+
+    return () => clearInterval(timer); // Cleanup timer on unmount
+  }, [counter]);
+
   return (
     <main className="min-h-screen relative">
+      {showRedirectMessage && (
+        <div className="fixed inset-0 bg-gray-800 bg-opacity-90 flex items-center justify-center z-50 flex-col">
+          <h1 className="text-6xl text-orange-500">
+            This website is outdated. 
+          </h1>
+          <h1 className="text-white text-2xl">
+            Redirecting to the new website in {counter} seconds...
+          </h1>
+        </div>
+      )}
       <HomeComponent />
       <div
         id="portfolio"
